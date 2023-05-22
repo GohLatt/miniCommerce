@@ -14,7 +14,7 @@ const blogsDatas = [
   {
     id: 31,
     name: "Dell XPS 13 9315 13.4-inch, 1920 x 1200, 16;10, non-touch",
-    cover: "./Blogs/dell.jpg",
+    cover: "./Blogs/Dell.jpg",
     category: "computer",
     processor: "12th Generation Intel Core i5-1230U",
     memory: "16GB LPDDR5-5200",
@@ -63,36 +63,4 @@ const blogsDatas = [
   },
 ];
 
-export const allBlogsdata = [
-  {
-    id: 30,
-    cover: "./Blogs/mackbook-air.jpg",
-    name: "Macbook Air high-end 13-inch",
-    category: "computer",
-  },
-  {
-    id: 31,
-    name: "Dell XPS 13 9315 13.4-inch, 1920 x 1200, 16;10, non-touch",
-    cover: "./Blogs/dell.jpg",
-    category: "computer",
-  },
-  {
-    id: 32,
-    cover: "./Blogs/MSI.jpg",
-    name: `MSI Titan GT77 HX (2023) 17.3in, 3840 x 2160 mini LED w/ 144Hz`,
-    category: "computer",
-  },
-  {
-    id: 33,
-    cover: "./Blogs/iphone.jpg",
-    name: "iPhone 14 Pro Max",
-    category: "phone",
-  },
-  {
-    id: 34,
-    cover: "./Blogs/samsung.jpg",
-    name: "Samsung Galaxy F04",
-    category: "phone",
-  },
-];
 export default blogsDatas;

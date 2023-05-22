@@ -8,7 +8,7 @@ function Nav() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/pages">Pages</NavLink>
+          <NavLink to="/specialproduct">Special products</NavLink>
         </li>
         <li>
           <NavLink to="/useraccount">User Account</NavLink>
@@ -24,7 +24,7 @@ function Nav() {
         </li>
       </ul>
       <div>
-        <i className="fa-solid fa-user nav-icon right-mg"></i>
+        <i className="fa-solid fa-heart nav-icon right-mg"></i>
         <i className="fa-solid fa-bag-shopping nav-icon"></i>
         <p className="circle">3</p>
         <p className="circle-one">3</p>
