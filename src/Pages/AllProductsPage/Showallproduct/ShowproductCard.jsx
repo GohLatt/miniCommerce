@@ -7,7 +7,9 @@ function ShowproductCard() {
     <Card className="show-product-box">
       {shwoproducts.map((p) => (
         <Card className="card" key={p.id}>
-          <img src={p.cover} alt="flash img" />
+          <div>
+            <img src={p.cover} alt="flash img" />
+          </div>
           <div className="card-text">
             <p>{p.name}</p>
 

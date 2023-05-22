@@ -2,14 +2,18 @@ import Card from "../../Common/Card";
 import Carousel from "react-material-ui-carousel";
 const mainAllProducts = [
   {
-    id: "one",
-    img: "./AllproductsImag/herosection/main-banner.jpg",
+    id: 18,
+    cover: "./AllproductsImag/herosection/main-banner.jpg",
     price: 999,
+    calPrice: 999,
+    name: "banner",
   },
   {
-    id: "two",
-    img: "./AllproductsImag/herosection/main-banner-1.jpg",
+    id: 19,
+    cover: "./AllproductsImag/herosection/main-banner-1.jpg",
     price: 999,
+    calPrice: 999,
+    name: "banner",
   },
 ];
 
@@ -18,7 +22,7 @@ function LeftMain() {
     <Carousel autoPlay animation="slide">
       {mainAllProducts.map((p) => (
         <Card className="left-main" key={p.id}>
-          <img src={p.img} alt="back-img" />
+          <img src={p.cover} alt="back-img" />
           <div className="main-text-box">
             <p className="des-title">Supercharged from pros</p>
             <h2 className="main-title">Special Sale</h2>

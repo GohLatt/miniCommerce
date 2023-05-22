@@ -1,8 +1,9 @@
 const special = [
   {
-    id: 1,
+    id: 17,
     cover: "./images/Special/special-1.png",
     price: 1200,
+    calPrice: 1200,
     name: "Electric guitar",
   },
 ];

@@ -8,7 +8,6 @@ function CategorySection() {
         <img src="https://img.icons8.com/glyph-neue/64/26e07f/new.png" />
         <h3>New Arrivals</h3>
       </div>
-
       <CategoryCard />
     </Section>
   );

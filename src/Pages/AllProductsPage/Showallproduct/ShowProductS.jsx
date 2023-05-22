@@ -1,10 +1,11 @@
 import Section from "../../../Common/Section";
+import CatAndSearch from "../CatAndSearch/CatAndSearch";
 import ShowproductCard from "./ShowproductCard";
 
 function ShowProductS() {
   return (
     <Section className="show-product-section">
-      <h2 className="heading-secondary">All Products</h2>
+      <CatAndSearch />
       <ShowproductCard />
     </Section>
   );
