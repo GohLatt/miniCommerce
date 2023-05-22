@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red-light: #ef4444;
+  --red-dark: #b91c1c;
+  --blue-light: #bae6fd;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  color: #333;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 1rem 0;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--red-light);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--red-dark);
+}
+.btn-buy {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  width: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+a:hover {
+  color: var(--red-light);
+}
+a.active {
+  color: var(--red-light);
+}
+.Carousel2-root-1 {
+  position: absolute;
+}
+
+.des-title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--red-dark);
+}
+.main-title {
+  color: #030712;
+}
+.price-title {
+  line-height: 1.8;
+  font-size: 1.6rem;
+  color: #111827;
+}

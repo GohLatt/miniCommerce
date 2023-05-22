@@ -1,0 +1,30 @@
+.special-section {
+  padding-bottom: 9.6rem;
+}
+.special {
+  display: flex;
+  gap: 3.2rem;
+  background-color: #be185d;
+  align-items: center;
+  padding: 3.2rem;
+  border-radius: 11px;
+  color: #e7e5e4;
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+.special img {
+  width: 60rem;
+}
+.special-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.special-price {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.btn-special {
+  padding: 1.2rem 5rem;
+  width: 20rem;
+}

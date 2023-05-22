@@ -1,0 +1,204 @@
+/* category===================================================== */
+
+.section-hero {
+  padding-top: 9.6rem;
+  display: grid;
+  grid-template-columns: 35rem 1fr;
+  gap: 4.8rem;
+}
+.left-slider img {
+  width: 100%;
+  height: 104%;
+  padding: 2rem 0;
+}
+.categroy-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1.5rem 2.4rem;
+  border-radius: 5px;
+}
+.category {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.category:hover.category p {
+  color: var(--red-light);
+}
+.category img {
+  width: 3rem;
+}
+.category p {
+  font-size: 1.6rem;
+}
+/* category===================================================== */
+
+/* mainSlider===================================================== */
+
+.main-slider-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.left {
+  width: 60%;
+  padding-top: 10rem;
+}
+.left h1 {
+  margin-bottom: 2.4rem;
+  font-weight: 700;
+}
+.left p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-bottom: 2.4rem;
+}
+.main-slider .all-main .Carousel2-root-1 .Carousel2-root-1 {
+  bottom: 3rem;
+}
+.right {
+  width: 40%;
+  height: 40rem;
+}
+
+.right img {
+  margin-top: 4.8rem;
+  width: 100%;
+}
+.carousel-control-next-icon {
+  background-color: var(--red-light);
+}
+
+/*Flash data Section ====================================*/
+.flash-section {
+  padding: 9.6rem 0;
+  position: relative;
+}
+.fa-check {
+  color: var(--red-light);
+  font-weight: 600;
+}
+.flash-card {
+  position: relative;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  border-radius: 11px;
+  width: 26rem;
+  margin-left: 2.4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.flash-card:hover .add-to-cart {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+.flash-card img {
+  width: 100%;
+  height: 24rem;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+.fa-star {
+  color: #f59e0b;
+}
+.react-multiple-carousel__arrow {
+  position: absolute;
+}
+.react-multiple-carousel__arrow--left {
+  left: 0;
+}
+.react-multiple-carousel__arrow--right {
+  right: 0;
+}
+.flash-text {
+  padding: 0 2.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.flash-text p {
+  font-size: 1.8rem;
+}
+.review {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.6rem;
+}
+.d-price {
+  font-weight: 500;
+}
+.discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 5px 1rem;
+  background-color: var(--red-light);
+  color: #fff;
+  font-size: 1.4rem !important;
+  border-radius: 1rem;
+}
+.add-to-cart {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 3rem;
+  right: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.fa-plus {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: var(--red-light);
+  font-size: 2.4rem;
+}
+
+/* new Arrival category delete =====================================*/
+.newArrival {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.newArrival img {
+  width: 6rem;
+}
+.category-section {
+  padding: 0 0 9.6rem;
+}
+.category-card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.6rem;
+}
+.new-arrival-card {
+  margin-top: 2.4rem;
+  position: relative;
+}
+.new-arrival-card img {
+  width: 100%;
+  height: 23rem;
+}
+.new-arr-text {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+  color: #111827;
+}
+.new-price {
+  color: var(--red-light);
+  font-weight: 600;
+}
