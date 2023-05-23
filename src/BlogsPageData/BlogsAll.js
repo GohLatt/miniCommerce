@@ -5,6 +5,7 @@ const allBlogsdata = [
     name: "Macbook Air high-end 13-inch",
     category: "computer",
     calPrice: 10000,
+    price: 10000,
   },
   {
     id: 31,
@@ -12,6 +13,7 @@ const allBlogsdata = [
     cover: "./Blogs/Dell.jpg",
     category: "computer",
     calPrice: 8000,
+    price: 8000,
   },
   {
     id: 32,
@@ -19,6 +21,7 @@ const allBlogsdata = [
     name: `MSI Titan GT77 HX (2023)`,
     category: "computer",
     calPrice: 12000,
+    price: 12000,
   },
   {
     id: 33,
@@ -26,6 +29,7 @@ const allBlogsdata = [
     name: "iPhone 14 Pro Max",
     category: "phone",
     calPrice: 3000,
+    price: 3000,
   },
   {
     id: 34,
@@ -33,6 +37,7 @@ const allBlogsdata = [
     name: "Samsung Galaxy F04",
     category: "phone",
     calPrice: 7000,
+    price: 7000,
   },
 ];
 

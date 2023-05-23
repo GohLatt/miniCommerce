@@ -52,7 +52,6 @@
 /* Sp product detail page */
 .sp-product-detail-page {
   padding: 12rem 0 9.6rem;
-  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -64,6 +63,8 @@
 }
 .sp-prodcut-detail-card img {
   width: 100%;
+  height: 36rem;
+  margin-top: 5rem;
 }
 
 .sp-product-name {

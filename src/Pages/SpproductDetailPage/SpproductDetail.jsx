@@ -1,5 +1,6 @@
 import SpproductDetailCard from "./SpproductDetailCard";
 import { useParams } from "react-router-dom";
+import "../SpecialProductPage/Specialproduct.css";
 function SpproductDetail() {
   const { id } = useParams();
 

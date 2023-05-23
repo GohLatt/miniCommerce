@@ -1,0 +1,74 @@
+.mycart-page {
+  padding: 12rem 0;
+}
+.my-cart-container {
+  width: 100rem;
+}
+.cart-title {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  font-weight: 500;
+  margin-top: 4.8rem;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.cart-title p {
+  font-size: 1.8rem;
+}
+
+.cart-title div {
+  display: flex;
+  gap: 3.2rem;
+  font-size: 1.8rem;
+}
+.cart-title div p {
+  width: 13rem;
+}
+
+.cart-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  padding-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+.cart-img {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.cart-img img {
+  width: 7rem;
+  height: 7rem;
+}
+.cart-box .mycart-detail {
+  display: flex;
+  gap: 3.2rem;
+}
+.cart-box .mycart-detail p {
+  width: 13rem;
+}
+.mycart-detail .plus-and-minus {
+  display: flex;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+.fa-circle-minus,
+.fa-circle-plus {
+  font-size: 2rem;
+}
+.fa-circle-minus:hover,
+.fa-circle-plus:hover {
+  color: var(--red-light);
+}
+.mycart-detail p .fa-xmark {
+  margin-left: 2.4rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+}

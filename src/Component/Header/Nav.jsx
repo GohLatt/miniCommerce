@@ -11,21 +11,23 @@ function Nav() {
           <NavLink to="/specialproduct">Special products</NavLink>
         </li>
         <li>
-          <NavLink to="/useraccount">User Account</NavLink>
-        </li>
-        <li>
           <NavLink to="/allproducts">All Products</NavLink>
         </li>
         <li>
-          <NavLink to="/trackorder">Track my order</NavLink>
+          <NavLink to="/login">User Account</NavLink>
         </li>
+
         <li>
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
       <div>
-        <i className="fa-solid fa-heart nav-icon right-mg"></i>
-        <i className="fa-solid fa-bag-shopping nav-icon"></i>
+        <NavLink to="/watchlist">
+          <i className="fa-solid fa-heart nav-icon right-mg"></i>
+        </NavLink>
+        <NavLink to="/cart">
+          <i className="fa-solid fa-bag-shopping nav-icon"></i>
+        </NavLink>
         <p className="circle">3</p>
         <p className="circle-one">3</p>
       </div>
