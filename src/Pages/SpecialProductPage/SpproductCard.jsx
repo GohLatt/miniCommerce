@@ -1,6 +1,8 @@
 import Card from "../../Common/Card";
 import Button from "../../Common/Button";
 import allBlogsdata from "../../BlogsPageData/BlogsAll";
+import { Link } from "react-router-dom";
+
 function SpproductCard() {
   return (
     <>
@@ -14,7 +16,9 @@ function SpproductCard() {
               <p>{p.name}</p>
               <p className="blogs-price">${p.calPrice}</p>
             </div>
-            <Button className="btn btn-read-more">Show more</Button>
+            <Link to={`/spproductdetail/${p.id}`}>
+              <Button className="btn btn-read-more">Show more</Button>
+            </Link>
           </div>
         </Card>
       ))}

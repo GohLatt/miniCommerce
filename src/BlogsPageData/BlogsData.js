@@ -1,7 +1,7 @@
 const blogsDatas = [
   {
     id: 30,
-    cover: "./Blogs/mackbook-air.jpg",
+    cover: "../Blogs/mackbook-air.jpg",
     name: "Macbook Air high-end 13-inch",
     processor: "1.8GHz Core i7",
     memory: "32GB ",
@@ -14,7 +14,7 @@ const blogsDatas = [
   {
     id: 31,
     name: "Dell XPS 13 9315 13.4-inch, 1920 x 1200, 16;10, non-touch",
-    cover: "./Blogs/Dell.jpg",
+    cover: "../Blogs/Dell.jpg",
     category: "computer",
     processor: "12th Generation Intel Core i5-1230U",
     memory: "16GB LPDDR5-5200",
@@ -25,7 +25,7 @@ const blogsDatas = [
   },
   {
     id: 32,
-    cover: "./Blogs/MSI.jpg",
+    cover: "../Blogs/MSI.jpg",
     name: `MSI Titan GT77 HX (2023) 17.3in, 3840 x 2160 mini LED w/ 144Hz`,
     category: "computer",
     processor: "Intel Core i9-13980HX 16-core",
@@ -37,7 +37,7 @@ const blogsDatas = [
   },
   {
     id: 33,
-    cover: "./Blogs/iphone.jpg",
+    cover: "../Blogs/iphone.jpg",
     name: "iPhone 14 Pro Max",
     category: "phone",
     display: "6.70-inch (2796x1290)",
@@ -50,7 +50,7 @@ const blogsDatas = [
   },
   {
     id: 34,
-    cover: "./Blogs/samsung.jpg",
+    cover: "../Blogs/samsung.jpg",
     display: `16.55cm (6.5") in the full rectangle and 16.14cm (6.4")`,
     category: "phone",
     name: "Samsung Galaxy F04",
