@@ -3,7 +3,8 @@ import Card from "./Card";
 import AddToCart from "../Component/Main/FlashData/AddToCart";
 import { SelectContexts, AllfunContext } from "../DataContext/ProductContext";
 function ItemCard({ data }) {
-  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  const [selectProduct, setSelectProduct, watchList, setWatchList] =
+    useContext(SelectContexts);
   const allCalobj = useContext(AllfunContext);
 
   return (
@@ -21,6 +22,8 @@ function ItemCard({ data }) {
           selectProduct={selectProduct}
           setSelectProduct={setSelectProduct}
           allCalobj={allCalobj}
+          watchList={watchList}
+          setWatchList={setWatchList}
         />
       </div>
     </Card>

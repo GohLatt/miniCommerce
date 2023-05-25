@@ -7,7 +7,8 @@ import {
 } from "../../../DataContext/ProductContext";
 import { useContext } from "react";
 function ShowProductS() {
-  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  const [selectProduct, setSelectProduct, watchList, setWatchList] =
+    useContext(SelectContexts);
   const allCalobj = useContext(AllfunContext);
   return (
     <Section className="show-product-section">
@@ -16,6 +17,8 @@ function ShowProductS() {
         selectProduct={selectProduct}
         setSelectProduct={setSelectProduct}
         allCalobj={allCalobj}
+        watchList={watchList}
+        setWatchList={setWatchList}
       />
     </Section>
   );

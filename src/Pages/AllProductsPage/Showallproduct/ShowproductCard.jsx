@@ -2,7 +2,13 @@ import shwoproducts from "./Showproduct";
 import Card from "../../../Common/Card";
 import AddToCart from "../../../Component/Main/FlashData/AddToCart";
 
-function ShowproductCard({ selectProduct, setSelectProduct, allCalobj }) {
+function ShowproductCard({
+  selectProduct,
+  setSelectProduct,
+  allCalobj,
+  watchList,
+  setWatchList,
+}) {
   return (
     <Card className="show-product-box">
       {shwoproducts.map((p) => (
@@ -19,6 +25,8 @@ function ShowproductCard({ selectProduct, setSelectProduct, allCalobj }) {
               selectProduct={selectProduct}
               setSelectProduct={setSelectProduct}
               allCalobj={allCalobj}
+              watchList={watchList}
+              setWatchList={setWatchList}
             />
           </div>
         </Card>

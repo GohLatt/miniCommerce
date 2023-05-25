@@ -2,7 +2,8 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { SelectContexts } from "../../DataContext/ProductContext";
 function Nav() {
-  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  const [selectProduct, setSelectProduct, watchList] =
+    useContext(SelectContexts);
   return (
     <nav className="second-nav">
       <h1 className="logo-text">GohShop</h1>
@@ -32,7 +33,7 @@ function Nav() {
           <i className="fa-solid fa-bag-shopping nav-icon"></i>
         </NavLink>
         <p className="circle">{selectProduct.length}</p>
-        <p className="circle-one">0</p>
+        <p className="circle-one">{watchList.length}</p>
       </div>
     </nav>
   );

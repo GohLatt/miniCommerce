@@ -16,7 +16,10 @@ function MyCart() {
         setSelectProduct={setSelectProduct}
         allCalobj={allCalobj}
       />
-      <TotallCart selectProduct={selectProduct} />
+      <TotallCart
+        selectProduct={selectProduct}
+        setSelectProduct={setSelectProduct}
+      />
     </div>
   );
 }

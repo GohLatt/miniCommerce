@@ -1,24 +1,18 @@
 import { createContext, useReducer, useState } from "react";
-import allProductDatas from "../AllproductData";
 export const ProductContexts = createContext();
 export const SelectContexts = createContext();
 export const AllfunContext = createContext();
 
 //giving data
-const ProductProvider = (props) => {
-  const [originProduct, setOriginProduct] = useState(allProductDatas);
-  return (
-    <ProductContexts.Provider value={[originProduct]}>
-      {props.children}
-    </ProductContexts.Provider>
-  );
-};
 
 //giving data
 const SelectProvider = (props) => {
   const [selectProduct, setSelectProduct] = useState([]);
+  const [watchList, setWatchList] = useState([]);
   return (
-    <SelectContexts.Provider value={[selectProduct, setSelectProduct]}>
+    <SelectContexts.Provider
+      value={[selectProduct, setSelectProduct, watchList, setWatchList]}
+    >
       {props.children}
     </SelectContexts.Provider>
   );
@@ -74,6 +68,28 @@ const AllfunContextProvider = (props) => {
     remove(id, select, setSelect) {
       setSelect(select.filter((sp) => sp.id !== id));
     },
+
+    //add watchlist
+    addWatchList(product, watchList, setWatchList, selectProduct) {
+      let productExist = watchList.find((wp) => wp.id === product.id);
+      let productExistInCart = selectProduct.find((sp) => sp.id === product.id);
+
+      if (productExistInCart) {
+        return alert("Your product is alredy exit shopCart");
+      }
+
+      if (productExist) {
+        alert("This product is already add watchlist");
+      } else {
+        setWatchList((prev) => [...prev, { ...product, count: 1 }]);
+      }
+    },
+
+    //add watchlist to mycart
+    addWatchListToMycart(product, watchList, setSelect, setWatchList) {
+      setSelect((prev) => [...prev, product]);
+      setWatchList(watchList.filter((wp) => wp.id !== product.id));
+    },
   };
 
   return (
@@ -83,4 +99,4 @@ const AllfunContextProvider = (props) => {
   );
 };
 
-export { ProductProvider, SelectProvider, AllfunContextProvider };
+export { SelectProvider, AllfunContextProvider };

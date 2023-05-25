@@ -29,8 +29,8 @@ const responsive = {
 
 function FlashCard() {
   const allCalobj = useContext(AllfunContext);
-  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
-  console.log(selectProduct);
+  const [selectProduct, setSelectProduct, watchList, setWatchList] =
+    useContext(SelectContexts);
 
   return (
     <>
@@ -68,6 +68,8 @@ function FlashCard() {
                 selectProduct={selectProduct}
                 setSelectProduct={setSelectProduct}
                 allCalobj={allCalobj}
+                watchList={watchList}
+                setWatchList={setWatchList}
               />
             </div>
           </Card>

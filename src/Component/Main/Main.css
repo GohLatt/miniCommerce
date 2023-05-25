@@ -162,6 +162,9 @@
   color: var(--red-light);
   font-size: 2.4rem;
 }
+.add-heart:hover {
+  color: var(--red-light);
+}
 
 /* new Arrival category delete =====================================*/
 .newArrival {
