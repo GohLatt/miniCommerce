@@ -2,7 +2,7 @@ import shwoproducts from "./Showproduct";
 import Card from "../../../Common/Card";
 import AddToCart from "../../../Component/Main/FlashData/AddToCart";
 
-function ShowproductCard() {
+function ShowproductCard({ selectProduct, setSelectProduct, allCalobj }) {
   return (
     <Card className="show-product-box">
       {shwoproducts.map((p) => (
@@ -14,7 +14,12 @@ function ShowproductCard() {
             <p>{p.name}</p>
 
             <p className="p-price">${p.price}</p>
-            <AddToCart />
+            <AddToCart
+              product={p}
+              selectProduct={selectProduct}
+              setSelectProduct={setSelectProduct}
+              allCalobj={allCalobj}
+            />
           </div>
         </Card>
       ))}

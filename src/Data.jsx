@@ -5,6 +5,7 @@ const Data = [
     cover: "./images/flash/flash-1.png",
     name: "Shoes",
     price: 100,
+    calPrice: 100,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const Data = [
     cover: "./images/flash/flash-2.png",
     name: "Watch",
     price: 20,
+    calPrice: 20,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const Data = [
     cover: "./images/flash/flash-3.png",
     name: "Smart Mobile Black",
     price: 200,
+    calPrice: 200,
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const Data = [
     cover: "./images/flash/vacuum cleaner.jpg",
     name: "Vacuum cleaner",
     price: 250,
+    calPrice: 250,
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const Data = [
     cover: "./images/flash/tv.jpg",
     name: "TV",
     price: 100,
+    calPrice: 100,
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const Data = [
     cover: "./images/flash/fan1.jpg",
     name: "Fun",
     price: 100,
+    calPrice: 100,
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const Data = [
     cover: "./images/flash/iron.jpg",
     name: "Iron",
     price: 150,
+    calPrice: 150,
   },
 ];
 

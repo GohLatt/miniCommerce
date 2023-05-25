@@ -1,22 +1,31 @@
 import Card from "../../Common/Card";
 
-function MyCartBox() {
+function MyCartBox({ product, increaseFun, decreaseFun, removeFun }) {
   return (
     <Card className="cart-box">
       <div className="cart-img">
-        <img src="./Blogs/MSI.jpg" alt="item photo" />
-        <p>productNmae</p>
+        <img src={product.cover} alt="item photo" />
+        <p>{product.name}</p>
       </div>
       <div className="mycart-detail">
-        <p>$500</p>
+        <p>${product.calPrice}</p>
         <p className="plus-and-minus">
-          <i class="fa-solid fa-circle-minus"></i>
-          <span>10</span>
-          <i class="fa-solid fa-circle-plus"></i>
+          <i
+            className="fa-solid fa-circle-minus"
+            onClick={() => decreaseFun(product.id)}
+          ></i>
+          <span>{product.count}</span>
+          <i
+            className="fa-solid fa-circle-plus"
+            onClick={() => increaseFun(product.id)}
+          ></i>
         </p>
-        <p>$50000</p>
-        <p>
-          <i className="fa-solid fa-xmark"></i>
+        <p>${product.price}</p>
+        <p className="last-child">
+          <i
+            className="fa-solid fa-xmark"
+            onClick={() => removeFun(product.id)}
+          ></i>
         </p>
       </div>
     </Card>

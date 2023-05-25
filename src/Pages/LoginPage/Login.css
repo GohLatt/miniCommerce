@@ -79,6 +79,10 @@
   gap: 2.4rem;
   color: #fff;
   padding: 0 3.2rem;
+  transition: all 0.5s;
+}
+.sign-up:hover {
+  background-image: url("./login/login2.jpg");
 }
 .sign-up h2 {
   font-weight: 600;

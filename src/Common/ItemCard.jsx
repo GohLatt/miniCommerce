@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "./Card";
 import AddToCart from "../Component/Main/FlashData/AddToCart";
-
+import { SelectContexts, AllfunContext } from "../DataContext/ProductContext";
 function ItemCard({ data }) {
+  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  const allCalobj = useContext(AllfunContext);
+
   return (
     <Card className="card">
       <img src={data.cover} alt="flash img" />
@@ -13,7 +16,12 @@ function ItemCard({ data }) {
           ${data.price}
           <span className="lines-throught">${data.price * 2}</span>
         </p>
-        <AddToCart />
+        <AddToCart
+          product={data}
+          selectProduct={selectProduct}
+          setSelectProduct={setSelectProduct}
+          allCalobj={allCalobj}
+        />
       </div>
     </Card>
   );

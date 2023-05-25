@@ -1,7 +1,7 @@
 import Card from "../../Common/Card";
 import Button from "../../Common/Button";
 
-function PhoneData({ product }) {
+function PhoneData({ product, selectProduct, setSelectProduct, allCalobj }) {
   return (
     <Card className="sp-prodcut-detail-card container">
       <img src={product.cover} />
@@ -24,7 +24,14 @@ function PhoneData({ product }) {
             Color: <span>{product.color}</span>
           </p>
         </div>
-        <Button className="btn btn-cart">Add to cart</Button>
+        <Button
+          className="btn btn-cart"
+          onClick={() =>
+            allCalobj.addItem(product, selectProduct, setSelectProduct)
+          }
+        >
+          Add to cart
+        </Button>
       </div>
     </Card>
   );

@@ -4,6 +4,11 @@ import Reviews from "./Reviews";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import AddToCart from "./AddToCart";
+import {
+  AllfunContext,
+  SelectContexts,
+} from "../../../DataContext/ProductContext";
+import { useContext } from "react";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -23,6 +28,10 @@ const responsive = {
 };
 
 function FlashCard() {
+  const allCalobj = useContext(AllfunContext);
+  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  console.log(selectProduct);
+
   return (
     <>
       <h3 className="section-title">
@@ -54,7 +63,12 @@ function FlashCard() {
               <Reviews />
               <p className="d-price">${d.price}</p>
               <p className="discount">{d.discount}% off</p>
-              <AddToCart />
+              <AddToCart
+                product={d}
+                selectProduct={selectProduct}
+                setSelectProduct={setSelectProduct}
+                allCalobj={allCalobj}
+              />
             </div>
           </Card>
         ))}

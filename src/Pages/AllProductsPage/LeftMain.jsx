@@ -1,23 +1,24 @@
 import Card from "../../Common/Card";
 import Carousel from "react-material-ui-carousel";
+import Button from "../../Common/Button";
 const mainAllProducts = [
   {
     id: 18,
     cover: "./AllproductsImag/herosection/main-banner.jpg",
     price: 999,
     calPrice: 999,
-    name: "banner",
+    name: "headphone",
   },
   {
     id: 19,
     cover: "./AllproductsImag/herosection/main-banner-1.jpg",
     price: 999,
     calPrice: 999,
-    name: "banner",
+    name: "phone",
   },
 ];
 
-function LeftMain() {
+function LeftMain({ selectProduct, setSelectProduct, allCalobj }) {
   return (
     <Carousel autoPlay animation="slide">
       {mainAllProducts.map((p) => (
@@ -29,7 +30,14 @@ function LeftMain() {
             <p className="price-title">
               From $999.00 or 416.89/mo for 24 mo footnote
             </p>
-            <button className="btn btn-buy">Buy</button>
+            <Button
+              className="btn btn-buy"
+              onClick={() =>
+                allCalobj.addItem(p, selectProduct, setSelectProduct)
+              }
+            >
+              Buy
+            </Button>
           </div>
         </Card>
       ))}
