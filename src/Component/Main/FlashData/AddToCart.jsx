@@ -26,7 +26,7 @@ function AddToCart({
         className="fa-solid fa-plus"
         style={{ cursor: "pointer" }}
         onClick={() =>
-          allCalobj.addItem(product, selectProduct, setSelectProduct)
+          allCalobj.addItem(product, selectProduct, setSelectProduct, watchList)
         }
       ></i>
     </>

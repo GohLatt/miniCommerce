@@ -22,8 +22,14 @@ const SelectProvider = (props) => {
 const AllfunContextProvider = (props) => {
   const allCalobj = {
     /// add item fun
-    addItem(product, select, setSelect) {
+    addItem(product, select, setSelect, watchList) {
       let productExit = select.find((p) => p.id === product.id);
+      let productExitInWatch = watchList.find((p) => p.id === product.id);
+
+      if (productExitInWatch) {
+        return alert("This product is already exit in Watchlist");
+      }
+
       if (productExit) {
         setSelect(
           select.map((sp) =>
