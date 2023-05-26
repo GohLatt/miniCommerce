@@ -18,7 +18,7 @@ const mainAllProducts = [
   },
 ];
 
-function LeftMain({ selectProduct, setSelectProduct, allCalobj }) {
+function LeftMain({ selectProduct, setSelectProduct, allCalobj, watchList }) {
   return (
     <Carousel autoPlay animation="slide">
       {mainAllProducts.map((p) => (
@@ -33,7 +33,7 @@ function LeftMain({ selectProduct, setSelectProduct, allCalobj }) {
             <Button
               className="btn btn-buy"
               onClick={() =>
-                allCalobj.addItem(p, selectProduct, setSelectProduct)
+                allCalobj.addItem(p, selectProduct, setSelectProduct, watchList)
               }
             >
               Buy

@@ -7,7 +7,8 @@ import {
 } from "../../DataContext/ProductContext";
 import { useContext } from "react";
 function SpproductDetailCard({ id }) {
-  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  const [selectProduct, setSelectProduct, watchList] =
+    useContext(SelectContexts);
   const allCalobj = useContext(AllfunContext);
   return (
     <>
@@ -22,6 +23,7 @@ function SpproductDetailCard({ id }) {
                 selectProduct={selectProduct}
                 setSelectProduct={setSelectProduct}
                 allCalobj={allCalobj}
+                watchList={watchList}
               />
             );
           } else {
@@ -32,6 +34,7 @@ function SpproductDetailCard({ id }) {
                 selectProduct={selectProduct}
                 setSelectProduct={setSelectProduct}
                 allCalobj={allCalobj}
+                watchList={watchList}
               />
             );
           }

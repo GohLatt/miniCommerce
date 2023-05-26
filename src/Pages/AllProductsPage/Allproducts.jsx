@@ -8,7 +8,7 @@ import {
 import { useContext } from "react";
 import "./Allproducts.css";
 function Allproducts() {
-  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  const [selectProduct, setSelectProduct,watchList] = useContext(SelectContexts);
   const allCalobj = useContext(AllfunContext);
   return (
     <>
@@ -17,6 +17,7 @@ function Allproducts() {
           selectProduct={selectProduct}
           setSelectProduct={setSelectProduct}
           allCalobj={allCalobj}
+          watchList={watchList}
         />
         <ShowProductS />
       </div>
