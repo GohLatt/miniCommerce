@@ -2,7 +2,7 @@ import { useState } from "react";
 import Card from "../../../Common/Card";
 import CatBox from "./CatBox";
 
-function Cat() {
+function Cat({ query, setQuery }) {
   const [up, setUp] = useState(true);
   const [show, setShow] = useState(true);
   const showUpFun = () => {
@@ -20,9 +20,15 @@ function Cat() {
         {!up && (
           <i className="fa-solid fa-chevron-down" onClick={showUpFun}></i>
         )}
-        {up && <i className="fa-solid fa-chevron-up" onClick={showUpFun}></i>}
+        {up && (
+          <i
+            style={{ cursor: "pointer" }}
+            className="fa-solid fa-chevron-up"
+            onClick={showUpFun}
+          ></i>
+        )}
       </div>
-      {!show && <CatBox />}
+      {!show && <CatBox query={query} setQuery={setQuery} setShow={setShow} />}
     </Card>
   );
 }
