@@ -25,15 +25,19 @@ function Nav() {
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
-      <div>
-        <NavLink to="/watchlist">
-          <i className="fa-solid fa-heart nav-icon right-mg"></i>
-        </NavLink>
-        <NavLink to="/cart">
-          <i className="fa-solid fa-bag-shopping nav-icon"></i>
-        </NavLink>
-        <p className="circle">{selectProduct.length}</p>
-        <p className="circle-one">{watchList.length}</p>
+      <div className="addandwatch">
+        <div className="addandwatch-box">
+          <NavLink to="/watchlist">
+            <i className="fa-solid fa-heart nav-icon right-mg"></i>
+          </NavLink>
+          <p className="circle-one">{watchList.length}</p>
+        </div>
+        <div className="addandwatch-box">
+          <NavLink to="/cart">
+            <i className="fa-solid fa-bag-shopping nav-icon"></i>
+          </NavLink>
+          <p className="circle">{selectProduct.length}</p>
+        </div>
       </div>
     </nav>
   );

@@ -1,6 +1,6 @@
 import "./Header.css";
 import Nav from "./Nav";
-import Searchbar from "./Searchbar";
+
 
 function Header() {
   return (

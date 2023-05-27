@@ -11,6 +11,7 @@ header {
 }
 
 .logo-text {
+  user-select: none;
   color: var(--red-light);
 }
 
@@ -60,6 +61,12 @@ header {
 .right-mg {
   margin-right: 3.2rem;
 }
+.addandwatch {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  position: relative;
+}
 .circle,
 .circle-one {
   padding: 7px;
@@ -70,13 +77,14 @@ header {
   font-weight: 500;
   color: #fff;
 }
+
 .circle {
-  top: 0.5rem;
-  right: 6.5rem;
+  top: -1.2rem;
+  right: -0.5rem;
 }
 
 .circle-one {
-  top: 0.5rem;
-  right: 14rem;
+  top: -1.2rem;
+  right: 9rem;
 }
 /* Header======================================= */

@@ -10,7 +10,8 @@ import "./special.css";
 import { useContext } from "react";
 
 function SpecialDis() {
-  const [selectProduct, setSelectProduct] = useContext(SelectContexts);
+  const [selectProduct, setSelectProduct, watchList] =
+    useContext(SelectContexts);
   const allCalobj = useContext(AllfunContext);
   return (
     <Section className="special-section">
@@ -29,7 +30,7 @@ function SpecialDis() {
             <Button
               className="btn btn-special"
               onClick={() =>
-                allCalobj.addItem(s, selectProduct, setSelectProduct)
+                allCalobj.addItem(s, selectProduct, setSelectProduct, watchList)
               }
             >
               Buy now
